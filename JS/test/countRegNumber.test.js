@@ -1,4 +1,4 @@
-describe('Test my countRefNumber function' , function(){
+describe('Test my countRegNumber function' , function(){
     it('Should return 1 when called with "CA 182736"' , function(){
         assert.equal(1,countRegNumber('CA 182736'));
     });
