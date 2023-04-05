@@ -15,11 +15,11 @@ describe('Test my findItemsOver function' , function(){
         assert.deepEqual(results, findItemsOver(itemList,20));
     });
 
-    it('Should return electronics when called with "itemList2,20"' , function(){
+    it('Should return results2 when called with "itemList2,20"' , function(){
         assert.deepEqual(results2, findItemsOver(itemList2,20));
     });
 
-    it('Should return electronics when called with "itemList3,20"' , function(){
+    it('Should return results3 when called with "itemList3,20"' , function(){
         assert.deepEqual(results3, findItemsOver(itemList3,20));
     });
 })
