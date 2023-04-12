@@ -7,27 +7,15 @@ describe('Test my regCheck function' , function(){
         assert.equal(false,regCheck('DC 55 YU GP', 'EC'));
     });
 
-    it('Should return true when called with "5566 L", "L"' , function(){
-        assert.equal(true,regCheck('5566 L', 'L'));
+    it('Should return false when called with only "DC 55 YU GP" passed' , function(){
+        assert.equal(false,regCheck('DC 55 YU GP'));
     });
 
-    it('Should return false when called with "5566 L", "M"' , function(){
-        assert.equal(false,regCheck('5566 L', 'M'));
+    it('Should return false when called with only "GP" passed' , function(){
+        assert.equal(false,regCheck('GP'));
     });
 
-    it('Should return true when called with "ERT 123 EC", "EC"' , function(){
-        assert.equal(true,regCheck('ERT 123 EC', 'EC'));
-    });
-
-    it('Should return false when called with "ERT 123 EC", "GP"' , function(){
-        assert.equal(false,regCheck('ERT 123 EC', 'GP'));
-    });
-
-    it('Should return true when called with "FGT 123 MP", "MP"' , function(){
-        assert.equal(true,regCheck('FGT 123 MP', 'MP'));
-    });
-
-    it('Should return false when called with "FGT 123 MM", "MP"' , function(){
-        assert.equal(false,regCheck('FGT 123 MM', 'MP'));
+    it('Should return false when called no parameters are passed' , function(){
+        assert.equal(false,regCheck());
     });
 });

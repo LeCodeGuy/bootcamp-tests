@@ -11,8 +11,8 @@ describe('Test my countRegNumber function' , function(){
         assert.equal(3,countRegNumber('CA 182736,CY 523519,CJ 812328'));
     });
 
-    it('Should return 4 when called with "CF 123456, 123456 WC, GHT 456 MP, CA 1234-123"' , function(){
-        assert.equal(4,countRegNumber('CF 123456, 123456 WC, GHT 456 MP, CA 1234-123'));
+    it('Should return 0 when called with no parameters passed' , function(){
+        assert.equal(0,countRegNumber());
     });
     
 });

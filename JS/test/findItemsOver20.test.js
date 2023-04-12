@@ -22,4 +22,11 @@ describe('Test my findItemsOver20 function' , function(){
     it('Should return results3 when called with "itemList3"' , function(){
         assert.deepEqual(results3, findItemsOver20(itemList3));
     });
+
+    it('Should return results2 when called with no parameter passed' , function(){
+        assert.deepEqual(results2, findItemsOver20());
+    });
+    it('Should return results2 when called with "Hello"' , function(){
+        assert.deepEqual(results2, findItemsOver20("Hello"));
+    });
 })
