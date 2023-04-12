@@ -1,10 +1,9 @@
 
-var greet = function (neighbour){
-  return 'Hello, ' + neighbour
+function greet(neighbour){
+  if(neighbour != undefined && neighbour.length != 0){
+    return 'Hello, ' + neighbour;
+  }
+  else{
+    return "";
+  }
 }
-assert.equal(greet('Elmar'), 'Hello, Elmar');
-
-
-greet('Elmar');
-greet('Bob');
-greet('Sam');

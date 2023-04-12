@@ -7,7 +7,7 @@ describe('Test my isFromBellville function' , function(){
         assert.equal(true,isFromBellville('CY 123'));
     });
 
-    it('Should return false when called with no parameters passed' , function(){
-        assert.equal(false,isFromBellville());
+    it('Should return "" when called with no parameters passed' , function(){
+        assert.equal("",isFromBellville());
     });
 });

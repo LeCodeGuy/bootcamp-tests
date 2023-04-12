@@ -15,7 +15,7 @@ describe('Test my regCheck function' , function(){
         assert.equal(false,regCheck('GP'));
     });
 
-    it('Should return false when called no parameters are passed' , function(){
-        assert.equal(false,regCheck());
+    it('Should return "" when called no parameters are passed' , function(){
+        assert.equal("",regCheck());
     });
 });

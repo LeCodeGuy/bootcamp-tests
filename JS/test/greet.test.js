@@ -7,11 +7,11 @@ describe('Test my greet function' , function(){
         assert.equal("Hello, 1234",greet("1234"));
     });
 
-    it('it should return "Hello, " when called with ""' , function(){
-        assert.equal("Hello, ",greet(""));
+    it('it should return "" when called with ""' , function(){
+        assert.equal("",greet(""));
     });
 
-    it('it should return "Hello, undefined" when called with no parameter passed' , function(){
-        assert.equal("Hello, undefined",greet());
+    it('it should return "" when called with no parameter passed' , function(){
+        assert.equal("",greet());
     });
 });
